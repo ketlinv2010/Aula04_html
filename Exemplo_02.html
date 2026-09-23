@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Exemplo 02</title>
+    </head>
+    <body>
+        <header>
+            <h1 style="text-align:center;">Cadastro de Alunos</h1>
+        </header>
+
+        <main>
+            <!-- Formulário de cadastro -->
+             <form action="#" method="get">
+                <label for="nome">Nome do Aluno</label>
+                <input type="text" id="nome" name="nome" placeholder="digite o nome do aluno..." required >
+                <br><br>
+
+                <!-- Email do aluo=no -->
+                 <label for="email">Email</label>
+                 <!-- O type "email" é um tipo específico para validar o email -->
+                 <input type="email" id="email" name="email" placeholder="digite seu email..." required>
+                 <br><br>
+
+                <!-- Telefone do aluno -->
+                 <label for="telefone">Telefone</label>
+                 <!-- O tipoe "tel" é específico para telefone -->
+                 <input type="tel" id="telefone" name="telefone" placeholder="insira seu telefone..." required>
+                 <br><br>
+
+                <!-- Campo data de nascimento -->
+                 <label for="data_nascimento">Data de Nascimento</label>
+                 <!-- tipo "date" é específico para datas -->
+                 <input type="date" id="data_nascimento" name="data_nascimento" required>
+                 <br><br>
+
+                <!-- Idade aluno -->
+                 <label for="">Idade</label>
+                 <input type="number" id="idade" name="idade" placeholder="digite sua idade..." required>
+                 <br><br>
+
+                <!-- Campo de escolha -->
+                 <label>Você estuda para as provas?</label>
+                 <br>
+                 <label for="sim">Sim</label>
+                 <!-- Tipo "radio" é para escolher apenas uma opção -->
+                 <input type="radio" value="Sim" id="sim" name="pergunta">
+                 <br>
+                 <label for="nao">Não</label>
+                 <input type="radio" value="Nao" id="nao" name="pergunta">
+                 <!-- Para só um campo ser selecionado se tiver mais de um o "name" precisa ser igual -->
+                 <br><br>
+
+                 <!-- Campo range -->
+                  <label for="">O quanto você gosta das aulas do SENAI?</label>
+                  <!-- Input do tipo "range" criar uma barra de progresso -->
+                  <input type="range" id="progresso" name="progresso">
+                  <br><br>
+
+                 <!-- Cor favorita -->
+                  <label for="cor">Escolha sua cor favorita</label>
+                  <input type="color" id="cor" name="cor">
+                  <br><br>
+
+                  <label for="opcao">Selecione a sua sala</label>
+                  <!-- Campo de Seleção -->
+                  <select name="opcao" id="opcao">
+                    <!-- Criando opções para selecionar -->
+                     <option value="" selected disabled>Selecione...</option>
+                     <option value="">Sala Vermelha</option>
+                     <option value="">Sala Azul</option>
+                     <option value="">Sala Verde</option>
+                     <!-- "Selected" faz a informação vir pré-selecionada -->
+                     <!-- "Disabled" deixa a opção sem poder selecionar  -->
+                  </select>
+                  <br><br>
+
+                  <!-- Campo de arquivo -->
+                   <label for="arquivo">Envie sua foto</label>
+                   <input type="file" id="arquivo" name="file">
+                   <br><br>
+
+                   <!-- Campo com textarea -->
+                    <label for="obs">Observações</label>
+                    <textarea name="obs" id="obs" rows="8" cols="50"></textarea>
+                    <br><br>
+
+                   <!-- Campo com checkbox -->
+                    <input type="checkbox" id="termos" name="termos" value="termos">
+                    <label for="termos">Li e concordo com os termos</label>
+
+                    <br>
+
+                    <input type="checkbox" id="receberEmail" name="receberEmail" value="receberEmail">
+                    <label for="receberEmail">Aceito receber e-mail de divulgação</label>
+                    <br>
+                    
+                    <input type="checkbox" id="sms" name="sms" value="sms">
+                    <label for="sms">Aceito receber SMS de divulgação</label>
+                    <br><br>
+
+
+                <button type="submitb ">Enviar</button>
+             </form>
+        </main>
+    </body>
+</html>
