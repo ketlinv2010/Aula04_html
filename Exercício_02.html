@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Formulário de avaliação</title>
+    </head>
+    <body>
+        <header style="text-align: center;">
+            <h1>Formulário de Avaliação de Produto</h1>
+        </header>
+        <main>
+            <form action="#" method="post">
+                <label for="nome">Nome</label>
+                <br>
+                <input type="text" name="nome" id="nome"
+                placeholder="informe seu nome..." required>
+
+                <br><br>
+
+                <label for="email">Email</label>
+                <br>
+                <input type="email" name="email" id="email"
+                placeholder="informe sue email..." required>
+
+                <br><br>
+
+                <label for="avaliacao">Avaliação</label>
+                <br>
+                <input type="number" name="avaliacao" id="avaliacao"
+                placeholder="Ex.: 10" required>
+
+                <br><br>
+
+                <label for="">Comentário</label>
+                <br>
+                <textarea name="comentario" id="" placeholder="Escreva o que achou aqui..."></textarea>
+
+                <br><br>
+
+                <label for="">Recomendaria?</label>
+                <br>
+                <label for="sim">Sim</label>
+                <input type="radio" value="sim" name="pergunta" id="nao">
+                <label for="nao">Não</label>
+                <input type="radio" value="nao" name="pergunta" id="nao">
+
+                <br><br>
+
+                <label for="">Razão da Avaliação</label>
+                <select name="razao" id="">
+                    <option value="selecionar" selected disabled>Selecionar...</option>
+                    <option value="naoGostei">Não Gostei</option>
+                    <option value="gostei">Ótimo Produto</option>
+                </select>
+
+                <br><br>
+
+                <label for="">Sugestão de melhoria</label>
+                <br>
+                <textarea name="sugestao" id="" placeholder="Escreva o que achou aqui..."></textarea>
+
+                <br><br>
+
+                <label for="idade">Idade</label>
+                <br>
+                <input type="number" name="idade" id="idade" 
+                placeholder="informe sua idade..." required>
+
+                <br><br>
+
+                <label for="">Selecione seu Gênero</label>
+                <br>
+                <label for="feminino">Feminino</label>
+                <input type="radio" value="feminino" id="feminino" name="genero">
+                <br>
+                <label for="masculino">Masculino</label>
+                <input type="radio" value="masculino" id="masculino" name="genero">
+                <br>
+                <label for="nao_informe">Prefiro não informar</label>
+                <input type="radio" value="nao_informe" id="nao_informe" name="genero">
+
+                <br><br>
+
+                <label for="">Satisfação com o produto</label>
+                <br>
+                <input type="range" name="satisfacao" required>
+
+                <br><br>
+
+                <label for="facilidade">Facilidade de Uso</label>
+                <br>
+                <input type="number" name="facilidade" id="facilidade"
+                placeholder="De 0 a 10 quao fácil foi usar?" required>
+
+                <br><br>
+
+                <label for="qualidade">Qualidade do produto</label>
+                <br>
+                <input type="number" name="qualidade" id="qualidade"
+                placeholder="De 0 a 10 qual a qualidade do produto?" required>
+
+                <br><br>
+
+                <label for="preco">Preço</label>
+                <br>
+                <input type="number" id="preco" name="preco" required>
+
+                <br><br>
+
+                <label for="versao">Versão do Produto</label>
+                <br>
+                <input type="text" id="versao" name="versao" 
+                placeholder="Ex.: 0.1" required>
+
+                <br><br>
+
+                <label for="localizacao">Localização</label>
+                <br>
+                <input type="text" name="localizacao" id="localizacao"
+                placeholder="Ex.: Rua xx, n° xx" required>
+
+                <br><br>
+
+                <label for="data">Data da Compra</label>
+                <br>
+                <input type="date" name="data" id="data"
+                required>
+
+                <br><br>
+
+                <label for="">Origem da Compra</label>
+                <select name="estado" id="estado">
+                    <option value="Selecionar" selected disabled>Selecionar...</option>
+                    <option value="São Paulo">São Paulo</option>
+                    <option value="Rio de Janeiro">Rio de Janeiro</option>
+                    <option value="Bahia">Bahia</option>
+                </select>
+
+                <br><br>
+
+                <label for="">Satisfação com o suporte</label>
+                <br>
+                <input type="range" name="satisfacao" required>
+
+                <br><br>
+
+                <button type="submit">Enviar</button>
+            </form>
+        </main>
+    </body>
+</html>

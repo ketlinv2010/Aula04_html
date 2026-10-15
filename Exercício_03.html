@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Formulário de registro</title>
+    </head>
+    <body>
+        <header>
+            <h1 style="text-align:center;">Formulário de Registro de Usuário</h1>
+        </header>
+
+        <main>
+            <form action="#" method="GET">
+
+                <!-- Nome -->
+                <label for="nome">Nome</label>
+                <input type="text" id="nome" name="nome" placeholder="digite seu nome..." required>
+                <br><br>
+
+                <!-- Campo sobrenome -->
+                <label for="sobrenome">Sobrenome</label>
+                <input type="text" id="sobrenome" name="sobrenome" placeholder="digite seu sobrenome..." required>
+                <br><br>
+
+                <!-- Email -->
+                 <label for="email">Email</label>
+                 <br>
+                 <input type="email" id="email" name="email" 
+                 placeholder="digite se email..." required>
+                 <br><br>
+
+                <!-- Telefone -->
+                <label for="telefone">Telefone</label>
+                <br>
+                <input type="tel" placeholder="00 00000-0000" required>
+                <br><br>
+
+                <!-- Número de pessoas -->
+                 <label for="n_pessoas">Quantidade de pessoas</label>
+                 <br>
+                 <input type="number" id="n_pessoas" name="n_pessoas"
+                 placeholder="A reserva é para quantas pessoas?" required>
+                 <br><br>
+
+                <!-- Campo data de reserva -->
+                <label for="data_reserva">Data de Nascimento</label>
+                <input type="date" id="data_reserva" name="data_reserva" required>
+                <br><br>
+
+                <!-- Horário da reserva -->
+                 <label for="">Horário da Reserva</label>
+                 <br>
+                 <input type="time" name="horario" required>
+                 <br><br>
+
+                 <!-- PreferÊncias alimentares -->
+                <label for=>Preferências alimentares</label>
+                <br>
+                <label for="massa">Massa</label>
+                <input type="checkbox" name="massa">
+                <br>
+                <label for="carne">Carne</label>
+                <input type="checkbox" name="carne" id="carne">
+                <br><br>
+
+                <!-- Restições alimentares -->
+                <label for=>Restrições alimentares</label>
+                <br>
+                <label for="alergia">Tenho alergia a glutén</label>
+                <input type="checkbox" name="ler">
+                <br>
+                <label for="diabetes">Tenho diabetes</label>
+                <input type="checkbox" name="diabetes" id="diabetes">
+                <br><br>
+
+                <!-- Comentário -->
+                 <label for="comentario">Comentários adicionais</label>
+                 <br>
+                 <textarea name="cometario" id="comentario"
+                 placeholder="Adicione informações relevantes para te atendermos..."
+                 rows="8" cols="40"></textarea>
+                <br><br>
+
+                <!-- Tipo de evento-->
+                <label for="evento">Selecione o evento</label>
+                <select name="evento" id="evento">
+                    <option value="" selected disabled>Selecione...</option>
+                    <option value="">Show</option>
+                    <option value="">Rodízio</option>
+                    <option value="">Balada</option>
+                </select>
+                <br><br>
+
+                <!-- Necessidades-->
+                <label for="">Necessidades Especiais</label>
+                <br>
+                <label for="">Sou cego(a)</label>
+                <input type="checkbox" name="deficiencia1">
+                <br>
+                <label for="">Sou cadeirante</label>
+                <input type="checkbox" name="deficiencia2">
+                <br><br>
+
+                <!-- Preferência de assento -->
+                 <label for="">Preferência de assento</label>
+                 <br>
+                 <select name="preferencia" id="">
+                    <option value="selecionar" selected disabled>Selecionar...</option>
+                    <option value="janela">Assento na Janela</option>
+                    <option value="banheiro">Assento próximo ao banheiro</option>
+                 </select>
+                 <br><br>
+
+                <!-- Código Promocional -->
+                 <label for="promocao">Código Promocional</label>
+                 <br>
+                 <input type="text" id="promocao" name="promocao"
+                 placeholder="Ex.: ABX7V9">
+                 <br><br>
+
+                <!-- Aceitar Termos e Condições -->
+                 <label for="">Termos de Condições</label>
+                 <br>
+                 <input type="checkbox" name="termos" id="termos">
+                 <label for="termos">Li e aceito os termos e condições</label>
+                 <br>
+                 <input type="checkbox" name="notificacao" name="notificacao">
+                 <label for="notificacao">Aceito receber notificações</label>
+                 <br><br>
+
+                <!-- Campo cidade -->
+                <label for="cidade">Cidade</label>
+                <input type="text" id="cidade" name="cidade" placeholder="informe sua cidade..." required>
+                <br><br>
+
+                <!-- Cep -->
+                <label for="cep">CEP</label>
+                <input type="text" id="cep" name="cep" placeholder="informe seu CEP..." required>
+                <br><br>
+
+                <!-- Campo estado -->
+                <label for="estado">Selecione seu Estado</label>
+                <select name="estado" id="estado">
+                    <option value="selecionar" selected disabled>Selecione...</option>
+                    <option value="saoPaulo">São Paulo</option>
+                    <option value="rioJaneiro">Rio de Janeiro</option>
+                    <option value="alagoas">Alagoas</option>
+                    <option value="bahia">Bahia</option>
+                </select>
+                <br><br>
+
+                <!-- ReferÊncia -->
+                 <label for="referencia">Referência</label>
+                 <br>
+                 <input type="text" name="referencia" id="referencia"
+                 placeholder="informe uma referência...">
+                 <br><br>
+
+                <button type="submit">Enviar</button>
+            </form>
+        </main>
+    </body>
+    </html>
