@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -33,6 +33,192 @@
             <input type="text" name="endereco" id="endereco" 
             placeholder="Ex.: Rua xxxxx, n°xx" required>
             <br><br>
+
+            <form action="#" method="post">
+                <label for="nome">Nome</label>
+                <br>
+                <input type="text" id="nome" name="nome" 
+                placeholder="insira seu nome.." required>
+                <br><br>
+
+                <label for="email">Email</label>
+                <br>
+                <input type="email" id="email" name="email" 
+                placeholder="Ex.:ana@gmail.com" required>
+                <br><br>
+
+                <label for="telefone">Telefone</label>
+                <br>
+                <input type="tel" id="telefone" name="telefone"
+                placeholder="Ex.: (00) 00000-0000" required>
+                <br><br>
+
+                <label for="endereco">Endereço</label>
+                <br>
+                <input type="text" name="endereco" id="endereco" 
+                placeholder="Ex.: Rua xxxxx, n°xx" required>
+                <br><br>
+
+                <label for="">Data de Nascimento</label>
+                <br>
+                <input type="date" name="dataNascimento" required>
+                <br><br>
+
+                <label for="">Gênero</label>   
+                <br><br>        
+                <input type="radio" value="feminino" name="genero">
+                <label for="">Feminino</label>
+                <br>
+                <input type="radio" value="masculino" name="genero">
+                <label for="">Masculino</label>
+                <br>
+                <input type="radio" value="naoInformar" name="genero">
+                <label for="">Prefiro Não Informar</label>
+                <br><br>
+
+                <label for="escolaridade">Escolaridade</label>
+                <br>
+                <select name="escolaridade" id="escolaridade" required>
+                    <option value="selecionar" selected disabled>Selecionar...</option>
+                    <option value="fundamentIncom">Fundamental Incompleto</option>
+                    <option value="fundamentComp">Fundamental Completo</option>
+                    <option value="medioIncom">Ensino Médio Incompleto</option>
+                    <option value="medioComp">Ensino Médio Completo</option>
+                    <option value="superior">Ensino Superior</option>
+                </select>
+                <br><br>
+
+                <label for="profissao">Profissão</label>
+                <br>
+                <input type="text" id="profissao" name="profissao"
+                placeholder="Ex.:Professor" required>
+                <br><br>
+
+                <label for="experiencia">Experiência Anterior</label>
+                <br>
+                <input type="text" id="experiencia" name="experiencia" 
+                placeholder="Ex.:Assistente Administrativo">
+                <br><br>
+
+                <label for="motivacao">Motivação para o Curso</label>
+                <br>
+                <textarea name="motivacao" id="motivacao" cols="30" rows="5"
+                placeholder="Escreva o motivo pelo qual escolheu este curso..."></textarea>
+                <br><br>
+
+                <label for="">Expectativa para o Curso</label>
+                <br>
+                <input type="range" name="expectativa" required>
+                <br><br>
+
+                <label for="">Aceitar Termos e Condições</label>
+                <br>
+                <input type="checkbox" name="sim">
+                <label for="">Li e aceito os termos e condições</label>
+                <br>
+                <input type="checkbox" name="notificacao" >
+                <label for="">Aceito receber novidades por e-mail</label>
+                <br><br>
+
+                <label for="">Nível de Conhecimento em Informática</label>   
+                <br><br>        
+                <input type="radio" value="basico" name="nivelConhecimento">
+                <label for="">Básico</label>
+                <br>
+                <input type="radio" value="intermediario" name="nivelConhecimento">
+                <label for="">Intermediário</label>
+                <br>
+                <input type="radio" value="avancado" name="nivelConhecimento">
+                <label for="">Avançado</label>
+                <br><br>
+
+                <label for="">Disponibilidade de Horário</label>
+                <br>
+                <select name="disponi" id="disponi" required>
+                    <option value="selecionar" disabled selected>Selecionar...</option>
+                    <option value="manha">Manhã</option>
+                    <option value="tarde">Tarde</option>
+                    <option value="noite">Noite</option>
+                    <option value="qualquer">Qualquer horário</option>
+                </select>
+                <br><br>
+
+                <label for="">Referência de Amigo. Por onde você nos conheceu?</label>
+                <br>
+                <select name="indicacao" id="indicacao" required>
+                    <option value="selecionar" disabled selected>Selecionar...</option>
+                    <option value="amigo">Indicação de Amigos</option>
+                    <option value="instagram">Instagram</option>
+                    <option value="Google">Google</option>
+                    <option value="outro">Outro</option>
+                </select>
+                <br><br>
+
+                <label for="">Hobbies</label>
+                <br>
+                <input type="checkbox" name="ler" >
+                <label for="">Ler</label>
+                
+                <input type="checkbox" name="cantar">
+                <label for="">Cantar</label>
+                <br>
+
+                <input type="checkbox" name="dancar">
+                <label for="">Dançar</label>
+
+                <input type="checkbox" name="esportes">
+                <label for="">Praticar Esportes</label>
+                <br><br>
+
+                <label for="">Estado Civil</label>   
+                <br>      
+                <input type="radio" value="solteiro" name="estadoCivil">
+                <label for="">Solteiro(a)</label>
+                <br>
+                <input type="radio" value="casado" name="estadoCivil">
+                <label for="">Casado(a)</label>
+                <br>
+                <input type="radio" value="divorciado" name="estadoCivil">
+                <label for="">Divorciado(a)</label>
+                <br>
+                <input type="radio" value="viuvo" name="estadoCivil">
+                <label for="">Viúvo(a)</label>
+                <br>
+                <input type="radio" value="separado" name="estadoCivil">
+                <label for="">Separado judicialmente</label>
+                <br><br>
+
+                <label for="">Selecione os idiomas que você fala</label>
+                <br>
+                <select name="idioma" id="idioma" required>
+                    <option value="selecionar" disabled selected>Selecionar...</option>
+                    <option value="portugues">Português-BR</option>
+                    <option value="ingles">Inglês</option>
+                    <option value="francês">Francês</option>
+                    <option value="outro">Outro</option>
+                </select>
+                <br><br>
+
+                <label for="">Método de Pagamento</label>   
+                <br><br>        
+                <input type="radio" value="cataoDeb" name="pagamento">
+                <label for="">Cartão de Débito</label>
+                <br>
+                <input type="radio" value="cartaoCred" name="pagamento">
+                <label for="">Cartão de Crédito</label>
+                <br>
+                <input type="radio" value="pix" name="pagamento">
+                <label for="">Pix</label>
+                <br><br>
+
+                <label for="obs">Outras Observações</label>
+                <br>
+                <textarea name="obs" id="obs" cols="30" rows="5"
+                placeholder="Ex.: Curso interessante"></textarea>
+                <br><br>
+
+                <button type="submit">Enviar Inscrição</button>
+            </form>
         </main>
     </body>
 </html>

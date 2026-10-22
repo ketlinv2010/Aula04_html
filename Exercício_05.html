@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inscrição em Evento</title>
+</head>
+<body>
+    <header style="text-align:center;">
+        <h1>Inscrição em Evento</h1>
+    </header>
+
+    <main>
+        <form action="#" method="post">
+
+            <label for="nome">Nome</label>
+            <br>
+            <input type="text" id="nome" name="nome"
+            placeholder="Digite sue nome..." required>
+            <br><br>
+
+            <label for="email">Email</label>
+            <br>
+            <input type="email" id="email" name="email"
+            placeholder="Ex.: zuzu@gmail.com" required>
+            <br><br>
+
+            <label for="telefone">Telefone</label>
+            <br>
+            <input type="tel" id="telefone" name="telefone"
+            placeholder="(00) 00000-0000" required>
+            <br><br>
+
+            <label for="">Cargo</label>
+            <select name="cargo" id="cargo">
+                <option value="selecionar" disabled selected>Selecionar...</option>
+                <option value="gerente">Gerente</option>
+                <option value="operador">Operador</option>
+                <option value="desenvolvedor">Desenvolvedor</option>
+                <option value="outro">Outro</option>
+            </select>
+            <br><br>
+
+            <label for="empresa">Empresa</label>
+            <br>
+            <input type="text" id="empresa" name="empresa"
+            placeholder="Digite o nome da empresa..." required>
+            <br><br>
+
+            <label for="dataEvento">Data do Evento</label>
+            <br>
+            <input type="date" name="dataEvento" id="dataEvento" required>
+            <br><br>
+
+            <label for="horario">Horário de Chegada</label>
+            <br>
+            <input type="time" name="horario" id="horario">
+            <br><br>
+
+            <label for="alimentacao">Alimentação Preferida</label>
+            <br>
+            <input type="text" name="alimentacao" id="alimentacao" 
+            placeholder="Ex.:Macarrão">
+            <br><br>
+
+            <label for="">Restições Alimentares</label>
+            <br>
+            <input type="checkbox" name="intoleranciaLactose">
+            <label for="">Intolerância a Lactose</label>
+
+            <input type="checkbox" name="gluten">
+            <label for="">Intolerância a Gluten</label>
+            <br>
+
+            <input type="checkbox" name="diabetes">
+            <label for="">Diabetes</label>
+            
+            <input type="checkbox" name="pimenta">
+            <label for="">Intolerância a Pimenta</label>
+            <br><br>
+
+            <label for="">Necessidades Especiais</label>
+            <select name="necessidades" id="necessidades">
+                <option value="selecionar" selected disabled>Selecionar...</option>
+                <option value="cego">Deficiente Visual</option>
+                <option value="cadeirante">Cadeirante</option>
+                <option value="autismo">Autista Não-Verbal</option>
+                <option value="outro">Outro</option>
+            </select>
+            <br><br>
+
+            <label for="">Termos e Condições</label>
+            <br>
+            <input type="checkbox" name="politicaPrivacidade">
+            <label for="">Aceito todas as Políticas de Privacidade</label>
+            <br>
+            <input type="checkbox" name="receberAtualizacoes">
+            <label for="">Aceito receber atualizações sobre o Evento</label>
+            <br><br>
+
+            <label for="">Você tem acompanhante?</label>
+            <br>
+            <input type="radio" value="sim" name="acompanhante">
+            <label for="">Sim</label>
+            <br>
+            <input type="radio" value="nao" name="acompanhante">
+            <label for="">Não</label>
+            <br><br>
+
+            <label for="nomeAcompanhante">Nome do Acompanhante</label>
+            <br>
+            <input type="text" name="nomeAcompanhante" id="nomeAcompanhante"
+            placeholder="Ex.:Ketlin">
+            <br><br>
+
+            <label for="emailAcompanahnte">Email do Acompanhante</label>
+            <br>
+            <input type="email" id="emailAcompanahnte" name="emailAcompanahnte"
+            placeholder="Ex.:ketlin@gmail.com">
+            <br><br>
+
+            <label for="telAcompanhante">Telefone do Acompanhante</label>
+            <br>
+            <input type="tel" id="telAcompanhante" name="telAcompanhante"
+            placeholder="(00) 00000-0000">
+            <br><br>
+
+            <label for="dataNascimento">Data de Nascimento do Acompanhante</label>
+            <br>
+            <input type="date" name="dataNascimento" id="dataNascimento">
+            <br><br>
+
+            <label for="empresaAcompanhante">Empresa do Acompanhante</label>
+            <br>
+            <input type="text" id="empresaAcompanhante" name="empresaAcompanhante"
+            placeholder="Digite o nome da empresa...">
+            <br><br>
+
+            <label for="">Cargo</label>
+            <select name="cargoAcompanhante" id="cargoAcompanhante">
+                <option value="selecionar" disabled selected>Selecionar...</option>
+                <option value="gerente">Gerente</option>
+                <option value="operador">Operador</option>
+                <option value="desenvolvedor">Desenvolvedor</option>
+                <option value="outro">Outro</option>
+            </select>
+            <br><br>
+            
+            <label for="">Preferência de assento?</label>
+            <br>
+            <input type="radio" value="sim" name="prefenciaAcompanhante">
+            <label for="">Sim</label>
+            <br>
+            <input type="radio" value="nao" name="preferenciaAcompanhante">
+            <label for="">Não</label>
+            <br><br>
+
+            <label for="outrasInformacoes">Outras Informações</label>
+            <br>
+            <textarea name="outrasInformacoes" id="outrasInformacoes"
+            cols="20" rows="5"></textarea>
+            <br><br>
+
+            <button type="submit">Enviar</button>
+
+        </form>
+    </main>
+    
+</body>
+</html>

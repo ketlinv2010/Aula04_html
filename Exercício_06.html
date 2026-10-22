@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Solicitação de Orçamento</title>
+</head>
+<body>
+    <header style="text-align: center;">
+        <h1>Solicitação de Orçamento</h1>
+    </header>
+    
+    <main>
+        <form action="#" method="post">
+
+            <label for="nome">Nome</label>
+            <br>
+            <input type="text" id="nome" name="nome"
+            placeholder="Digite seu nome..." required>
+            <br><br>
+
+            <label for="empresa">Empresa</label>
+            <br>
+            <input type="text" id="empresa" name="empresa" 
+            placeholder="Digite o nome da empresa..." required>
+            <br><br>
+
+            <label for="email">Email</label>
+            <br>
+            <input type="email" id="email" name="email"
+            placeholder="Ex.:ana@gmail.com" required>
+            <br><br>
+
+            <label for="telefone">Telefone</label>
+            <br>
+            <input type="tel" id="telefone" name="telefone"
+            placeholder="(00) 00000-0000" required>
+            <br><br>
+
+            <label for="descricao">Descrição do Projeto</label>
+            <br>
+            <textarea name="descricao" id="descricao"
+            placeholder="Drescreva seu projeto..." cols="20" rows="5"></textarea>
+            <br><br>
+
+            <label for="prazo">Prazo para Entrega</label>
+            <br>
+            <input type="date" name="prazo" id="prazo" required>
+            <br><br>
+
+            <label for="orcamento">Orçamento Disponível</label>
+            <br>
+            <input type="number" name="orcamento" id="orcamento"
+            placeholder="Ex.:3000" required>
+            <br><br>
+
+            <label for="endereco">Local de Entrega</label>
+            <br>
+            <input type="text" id="endereco" name="endereco"
+            placeholder="Ex.: Rua xxxxxx, n°xx" required>
+            <br><br>
+
+            <label for="projetosAnteriores">Projeto Anterior</label>
+            <br>
+            <input type="text" id="projetosAnteriores" name="projetosAnteriores"
+            placeholder="Cole o link ou escreva a versão...">
+            <br><br>
+
+            <label for="">Preferência de Contato</label>
+            <br>
+            <input type="tel" name="preferenciaContato" placeholder="(00) 00000-0000" required>
+            <br><br>
+
+            <label for="">Termos e Condições</label>
+            <br>
+            <input type="checkbox" name="termosCondicoes">
+            <label for="">Aceito todos os termos e condições</label>
+            <br>
+            <input type="checkbox" name="receberNovidades">
+            <label for="">Aceito receber novidades por E-mail</label>
+            <br><br>
+
+            <label for="nomeRespons">Nome do Responsável</label>
+            <br>
+            <input type="text" id="nomeRespons" name="nomeRespons"
+            placeholder="Digite o nome do responsável..." required>
+            <br><br>
+
+            <label for="">Cargo</label>
+            <select name="cargo" id="cargo">
+                <option value="selecionar" disabled selected>Selecionar...</option>
+                <option value="gerente">Gerente</option>
+                <option value="operador">Operador</option>
+                <option value="desenvolvedor">Desenvolvedor</option>
+                <option value="outro">Outro</option>
+            </select>
+            <br><br>
+
+            <label for="telefoneRespons">Telefone</label>
+            <br>
+            <input type="tel" id="telefoneRespons" name="telefoneRespons"
+            placeholder="(00) 00000-0000" required>
+            <br><br>
+
+            <label for="inicio">Data de Início do Projeto</label>
+            <br>
+            <input type="date" name="inicio" id="inicio" required>
+            <br><br>
+
+            <label for="">Numero de Itens/Produtos</label>
+            <br>
+            <input type="number" name="qtdProduos" placeholder="Ex.:3" required>
+            <br><br>
+
+            <label for="">Urgência</label>   
+            <br><br>        
+            <input type="radio" value="baixa" name="nivelUrgencia">
+            <label for="">Baixa</label>
+            <br>
+            <input type="radio" value="media" name="nivelUrgencia">
+            <label for="">Média</label>
+            <br>
+            <input type="radio" value="alta" name="nivelUrgencia">
+            <label for="">Alta</label>
+            <br><br>
+
+            <label for="">Setor da Empresa</label>
+            <select name="setor" id="setor">
+                <option value="selecionar" disabled selected>Selecionar...</option>
+                <option value="administrativo">Administrativo</option>
+                <option value="desenvolvedor">Desenvolvedor</option>
+                <option value="atendimento">Atendimento</option>
+                <option value="outro">Outro</option>
+            </select>
+            <br><br>
+
+            <label for="">Método de Pagamento</label>   
+            <br><br>        
+            <input type="radio" value="cataoDeb" name="pagamento">
+            <label for="">Cartão de Débito</label>
+            <br>
+            <input type="radio" value="cartaoCred" name="pagamento">
+            <label for="">Cartão de Crédito</label>
+            <br>
+            <input type="radio" value="pix" name="pagamento">
+            <label for="">Pix</label>
+            <br><br>
+
+            <button type="submit">Enviar</button>
+
+        </form>
+    </main>
+</body>
+</html>
